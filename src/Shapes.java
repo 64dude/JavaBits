@@ -24,9 +24,17 @@ class TwoDShape {
 
 class Triangle extends TwoDShape {
 	
+	private String style;
+	
 	double area(double w, double h) {
 		return w * h / 2;
 	}
+	
+	Triangle(String s) {
+		style = s;
+	}
+	
+	String getStyle() {return style;}
 	
 	// System.out.println("Area: " + area(w, h));
 }
@@ -46,8 +54,8 @@ public class Shapes {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Triangle t1 = new Triangle();
-		Triangle t2 = new Triangle();
+		Triangle t1 = new Triangle("Equalateral");
+		Triangle t2 = new Triangle("Isoceles");
 		Rectangle r1 = new Rectangle();
 		t1.setDim(10,20);
 		t2.setDim(5, 2);
@@ -56,9 +64,9 @@ public class Shapes {
 		t1.printDim();
 		t2.printDim();
 		r1.printDim();
-		System.out.println("T1 area: " + t1.area(t1.getWidth(), t1.getHeight()));
-		System.out.println("T2 area: " + t2.area(t2.getWidth(), t2.getHeight()));
-		System.out.println("T1 area: " + r1.area(r1.getWidth(), r1.getHeight()));
+		System.out.println("T1 area/style: " + t1.area(t1.getWidth(), t1.getHeight())+ "/" + t1.getStyle());
+		System.out.println("T2 area/style: " + t2.area(t2.getWidth(), t2.getHeight()) + "/" + t2.getStyle());
+		System.out.println("R1 area: " + r1.area(r1.getWidth(), r1.getHeight()));
 
 	}
 
