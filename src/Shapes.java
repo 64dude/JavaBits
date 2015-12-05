@@ -2,7 +2,7 @@
  * Show Inheritance via 2D shapes
  * Superclass TwoDShape - Print dimensions
  * Subclass Triangle - Print area and dimensions (from superclass)
- * Test: Branch v2 (3rd update)
+ * Test: Branch (4th update)
  */
 
 class TwoDShape {
