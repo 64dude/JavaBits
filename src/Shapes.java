@@ -32,7 +32,7 @@ class TwoDShape {
 
 class Triangle extends TwoDShape {
 	
-	private String style;
+	private String style; //New comment changed in v2
 	
 	double area(double w, double h) {
 		return w * h / 2;
